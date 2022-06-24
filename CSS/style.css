@@ -1,0 +1,549 @@
+/* 页眉起始行数：   17     导航栏起始行数：   42       页脚起始行数：      77
+   index页起始行数：112    resume页起始行数：237       school页起始行数： 266
+   town页起始行数： 374    hobby页起始行数： 435       contact页起始行数：491*/
+body {
+    background:         url(../IMG/background.jpg) repeat;
+    margin:             0;
+}
+/* 凝胶布局 设置内容居中 */
+.inner {
+    background-color:   white;
+    margin-left:        auto;
+    margin-right:       auto;
+    height:             auto;
+    width:              1000px;
+}
+
+/* -------------页眉部分------------ */
+header {
+    height:             132px;
+}
+#head {
+    width:              1000px;
+    margin:             0 auto;
+}
+/* 第一张图采用绝对定位 */
+header #head .head-1 {
+    position:           absolute;
+    width:              115px;
+    margin:             5px 0px 0px 80px;
+}
+/* 另外两张图采用浮动布局 */
+header #head .head-2 {
+    float:              right;
+    padding-top:        10px;
+}
+header #head .head-3 {
+    height:             132px;
+    width:              415px;
+    margin-left:        220px;
+}
+
+/* -------------导航栏------------ */
+nav {
+    overflow:           hidden;
+    height:             50px;
+    background:         #f593a4d9;
+    }
+nav ul li {
+    overflow:           hidden;
+    float:              left;
+    height:             25px;
+    width:              16.5%;
+    margin:             2px 10px;
+    border-right:       1px solid #fff;
+}
+ul {
+    list-style:         none;
+    height:             20px;
+    width:              900px;
+    margin:             15px auto;
+}
+nav ul .right {
+    border-right:       none;
+}
+nav ul li a {
+    padding:            10px 30px;
+    text-decoration:    none;
+    color:              #fff;
+}
+nav ul li a:hover {
+    background:         #FFFFFF;
+    color:              #f2768c;
+    height:             40px;
+    margin:             2px;
+}
+
+/* -------------页脚部分------------ */
+footer {
+    background:         #f69fae;
+    height:             50px;
+    width:              auto;
+    padding:            20px 0;
+    font-size:          12px;
+    color:              white;
+    }
+footer ul {
+    text-align:         center;
+    width:              430px;
+    padding:            10px 0px 2px 125px;
+    margin:             0 auto;
+}
+footer ul li {
+    float:              left;
+    border-right:       1px solid #fff;
+    padding:            0px 8px;
+}
+footer ul li a {
+    text-decoration:    none;
+    cursor:             pointer;
+    color:              inherit;
+}
+footer ul .right {
+    float:              left;
+    border-right:       none;
+    padding:            0px 8px;
+}
+footer p {
+    text-align:         center;
+    margin:             0 auto;
+}
+
+/* -------------HOME 主页------------ */
+#container-1 {
+    margin-left:        auto;
+    margin-right:       auto;
+    height:             1075px;
+    width:              900px;
+    padding-top:        30px;
+}
+#container-1 #cont-1-0,#container-2 #cont-2-0,.hobby-1-0,.hobby-2-0 {
+    text-align:         center;
+    border-bottom:      3px solid #f2768c;
+    height:             50px;
+    margin-bottom:      15px;
+}
+#cont-1-0 h1,#cont-2-0 h1,.hobby-1 h1,.hobby-2 h1 {    
+    color:              #f2768c;
+    font-family:        'Broadway';
+}
+/* cont里的图片 */
+.pic1-0 {
+    height:             500px;
+    width:              720px;
+    margin-left:        90px;
+    margin-bottom:      10px;
+}
+.pic1-1 {
+    height:             auto;
+    width:              155px;
+    margin:             70px 37.5px auto 7.5px;
+}
+.pic1-2 {
+    height:             280px;
+    width:              210px;
+    transition:         all 0.5s;
+    margin-top:         80px;}
+.pic1-3 {
+    height:             280px;
+    width:              210px;
+    transition:         all 0.5s;
+
+}
+/* 图片的动态显示 */
+.pic1-2:hover,.pic1-3:hover {
+    transform:          scale(1.1,1.1);
+}
+/* 这张图采用绝对定位 */
+#container-1 #cont-1-1 {
+    position:           absolute;
+    height:             150px;
+    width:              200px;
+    margin-right:       20px;
+}
+#container-1 #cont-1-2 {
+    float:              left;
+    text-align:         center;
+    height:             auto;
+    width:              250px;
+    margin-left:        25px;
+    margin-top:         150px;
+}
+#cont-1-2 p{
+    color:              #fa6f87;
+    line-height:        30px;
+    border-bottom:      1px dotted #f2768c;
+    line-height:        45px;
+    font-size:          19px;
+    margin:             5px auto;
+}
+#cont-1-1 img {
+    position:           absolute;
+    height:             150px;
+    width:              150px;
+    margin:             0px 70px;
+}
+#container-1 #cont-1-3 {
+    float:              right;
+    height:             448px;
+    width:              550px;
+    border:             1px solid pink;
+    margin:             10px 20px 20px 20px;
+}
+#cont-1-2 h3,#cont-1-3 h3 {
+    background:         #f2768cc9;
+    color:              #fff;
+    text-align:         center;
+    line-height:        36px;
+    padding:            10px 0;
+    margin:             0;
+    font-size:          1.3em;
+    font-weight:        800;
+}
+#cont-1-3 section a {
+    float:              right;
+    text-decoration:    none;
+    color:              #f3536e;
+    margin:             0px 40px 0px 40px;
+    font-size:          1.2em;
+}
+#cont-1-3 section p {
+    color:              #fa6f87;
+    line-height:        35px;
+    font-size:          18px;
+    text-indent:        2em;
+    margin:             18px 18px 0px 18px;
+}
+#container-2 {
+    margin-left:        auto;
+    margin-right:       auto;
+    height:             481px;
+    width:              900px;
+}
+#container-2 #cont-2-1,#cont-2-2,#cont-2-3 {
+    float:              left;
+    height:             280px;
+    width:              210px;
+    margin:             10px 20px 0px 0px;
+}
+#container-2 #cont-2-4 {
+    background:         pink;
+    float:              right;
+    height:             280px;
+    width:              210px;   
+    margin-top:         10px;
+}
+
+/* ------------RESUME 个人简历------------ */
+.resume {
+    padding:            30px 0 60px 0;
+}
+.resume table img {
+    width:              115px;
+    height:             140px;
+}
+.resume table {
+    text-align:         center;
+    background-color:   #ffe3e570;
+    border-collapse:    collapse;
+    margin:             0 auto;
+    border:             3px solid #f2768c;
+    width:              750px;
+    font-size:          16px;
+}
+.resume table .title {
+    height:             40px;
+    background-color:   #f593a452;
+}
+.resume table td {
+    border:             #f2768c 2px solid;
+    width:              100px;
+    font-family:        "宋体";
+    height:             35px;
+    line-height:        1.5;
+}
+
+/* ------------SCHOOL 我的学校------------ */
+.school-2 {
+    background:         #ffe3e5d1;
+    height:             310px;
+    width:              900px;
+    margin:             0px auto 40px auto;
+    border:             3px dotted #f2768c;
+    border-radius:      20px;
+    }
+.container {
+    margin:             0px auto;
+    width:              900px;
+    padding:            40px 0 30px 0;
+    }
+.container table {
+    text-align:         center;
+    margin:             0px auto 10px auto;
+}    
+caption {
+    background:         #f2768cc9;
+    color:              #fff;
+    font-size:          23px;
+    font-weight:        800;
+    line-height:        36px;
+    height:             40px;
+    width:              350px;
+    margin:             0 auto 15px auto;
+    font-family:        "Broadway";
+}
+.container .table-1 {
+    background:         #ffe3e5;
+    height:             190px;
+    border:             white 14px solid;
+}
+.container table img {
+    height:             158px;
+    width:              235px;
+}
+.container .table-2 {
+    background:         #f2768cc9;
+    color:              #fff;
+    text-align:         center;
+    font-weight:        550;
+    font-size:          1.1em;
+    height:             32px;
+    width:              170px;
+    border-left:        white 90px solid;
+    border-right:       white 90px solid;
+}
+.school-2-1 img {
+    float:              left;
+    height:             270px;
+    width:              350px; 
+    margin:             19px 0 0 20px;
+}
+.school-2-2{
+    float:              right;
+    height:             280px;
+    width:              500px;
+    margin-left:        20px;
+}
+.school-2-2 h3 {
+    background:         #f2768cc9;
+    color:              #fff;
+    text-align:         center;
+    line-height:        38px;
+    width:              170px;
+    margin:             19px 0 10px 0;
+}
+.school-2-2 p {
+    font-family:        '仿宋_GB2312';
+    line-height:        26px;
+    text-indent:        2em;
+    margin:             0px 14px 0px auto;
+}
+.school-3 {
+    margin-left:        auto;
+    margin-right:       auto;
+    height:             auto;
+    width:              900px;
+    padding:            0px 0 20px 0;
+}
+.school-3 table {
+    text-align:         center;
+    margin:             0px auto 30px auto;
+}
+.school-3 .table-1 {
+    background:         #ffe3e5;
+    height:             240px;
+    border:             white 20px solid;
+}
+.school-3 table img {
+    height:             208px;
+    width:              370px; 
+}
+.school-3 .table-2 {
+    background:         #f2768cc9;
+    color:              #fff;
+    text-align:         center;
+    font-weight:        550;
+    font-size:          1.1em;
+    line-height:        36px;
+    height:             32px;
+    width:              170px;
+    border-left:        white 145px solid;
+    border-right:       white 145px solid;
+}
+
+/* ------------TOWN 我的家乡------------ */
+.town-1 {
+    height:             450px;
+    width:              900px;
+    margin:             0 auto 30px auto;
+    padding-top:        20px;
+}
+.town-1 .town-1-1 {
+    float:              left;
+    width:              470px;
+    margin-top:         30px;
+    border:             3px #f2768c dashed;
+    border-radius:      40px;
+}
+.tablecontainer {
+    display:            table;
+    margin:             0 auto;
+}
+.tablecontainer .tablerow {
+    display:            table-row;
+}
+.table-cell-1 {
+    display:            table-cell;
+    height:             190px;
+    width:              200px;
+}
+.table-cell-1 img {
+    float:              right;
+    height:             180px;
+    width:              190px;
+    border-radius:      30%;
+}
+.town-2 {
+    height: 590px;
+    width:              900px;
+    margin:             0 auto;
+}
+.town-2 h2,.town-1 h2 {
+    text-align:         center;
+    font-size:          28px;
+    color:              #f2768c;
+    font-family:        "Broadway";
+}
+.town-2-1 {
+    height:             240px;
+    margin-top:         30px;
+    margin-bottom:      30px;
+    border:             3px #f2768c dashed;
+    border-radius:      40px;
+}
+.town-2-1 article,.town-1-1 article{
+    color:              #fa6f87;
+    line-height:        35px;
+    font-size:          19px;
+    text-indent:        2em;
+    margin:             19px;
+}
+.town-2-1 article p,.town-1-1 article p {
+    margin:             0px;
+}
+
+/* ------------HOBBY 兴趣爱好------------ */
+.hobby-1 {
+    margin:             0px 50px;
+    height:             795px;
+    padding:            30px 0 0 0;
+}
+.hobby-2 {
+    margin:             0px 50px;
+    height:             730px;
+    padding:            30px 0 0 0;
+}
+.hobby-1-1 {
+    background:         #fee5e5;
+    float:              left;
+    width:              901px;
+    margin:             20px 0px;
+}
+.hobby-1-2 {
+    float:              left;
+    background-color:   #fee5e5;
+    text-align:         center;
+    width:              420px;
+}
+video {
+    float:              right;
+    width:              400px;
+    margin:             30px;
+    border:             3px dashed #f2768c;
+}
+.hobby-2-1 {
+    float:              left;
+    width:              385px;
+}
+.hobby-2-1 img {
+    width:              170px;
+    margin:             10px;
+}
+.hobby-2-2 {
+    float:              right;
+    width:              440px;
+    background:         #fee5e5;
+    height:             500px;
+    margin:             45px 30px 0px 0px;
+}
+.hobby-1 p,.hobby-2-2 p {
+    color:              #f2768c;
+    line-height:        35px;
+    font-size:          1.2em;
+    margin:             40px;
+}
+.hobby-1-1 img {
+    width:              180px;
+    height:             180px;
+    margin:             20px;
+}
+
+/* ------------CONTANCT 联系方式------------ */
+.contact-1 {
+    background:         #fee5e5;
+    float:              left;
+    text-align:         center;
+    height:             560px;
+    width:              530px;
+    margin:             50px 20px 0px 50px;
+    
+}
+.contact-1 .contact-1-2 img {
+    float:              left;
+    width:              220px;
+    margin:             10px 20px 0 20px;
+    border:             2px dashed #f2768c;
+}
+.contact-1 p {
+    color:              #f2768c;
+    line-height:        35px;
+    font-size:          1.1em;
+}
+span {
+    font-weight:        bold;
+    color:              #f3536e;
+    font-size:          140%;
+}
+/* 表单 */
+form {
+    display:            table;
+    border:             #f2768c 2px dashed;
+    margin:             0px 50px 0 auto;
+    width:              300px;
+    padding:            10px;
+}
+.tablerow {
+    display:            table-row;
+    padding:            20px;
+}
+form p {
+    color:              #fa6f87;
+    font-size:          120%;
+}
+.contact-2 {
+    height:             650px;
+    padding-top:        10px;
+}
+.contact-2 h2 {
+    text-align:         right;
+    color:              #f2768c;
+    margin-right:       160px;
+    margin-top:         40px;
+    font-weight:        1000;
+    font-family:        "Broadway";
+    }
+textarea {
+    width:              200px;
+    height:             70px;
+    margin-bottom:      15px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SCHOOL</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- 页眉 -->
+    <header>
+		<div id="head">
+            <!-- 第一个小图标采用绝对定位 -->
+            <img src="./IMG/head-1.png" class="head-1">
+		    <img src="./IMG/校徽.png" alt="校徽" class="head-2" />
+            <img src="./IMG/head-2.JPG" class="head-3">
+		</div>
+    </header>
+    <!-- end -->
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+	        <li><a href="index.html"><b>HOME</b></a></li>
+            <li><a href="town.html"><b>TOWN</b></a></li>
+            <li><a href="school.html"><b>SCOOHL</b></a></li>
+            <li><a href="hobby.html"><b>HOBBY</b></a></li>
+            <li class="right"><a href="contact.html"><b>CONTACT</b></a></li>
+        </ul>
+    </nav>
+    <!-- end -->
+
+    <!-- SCHOOL页：采用浮动布局和表格结合 -->
+    <div class="inner">
+        <!-- inner采用凝胶布局 居中显示 -->
+        <!-- 教育经历部分 表格 -->
+        <div class="school-1">
+            <div class="container">
+                <table>
+                    <caption>Educational Experience</caption>
+                    <tbody>
+                        <tr>
+                            <td class="table-1"><img src="./IMG/小学.png"></td>
+                            <td class="table-1"><img src="./IMG/城郊中学.png"></td>
+                            <td class="table-1"><img src="./IMG/苍溪中学.png"></td>  
+                        </tr>
+                        <tr>
+                            <td class="table-2">陵江小学</td>
+                            <td class="table-2">城郊中学</td>
+                            <td class="table-2">苍溪中学</td>  
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end of school-1 -->
+
+        <!-- 大学介绍 -->
+        <div class="school-2">
+            <div class="school-2-1">
+                <!-- 这张图片采用浮动布局 -->
+                <img src="./IMG/大学.png">
+            </div>
+            <div class="school-2-2">
+                <h3>中南财经政法大学</h3>
+                <!-- 采用<article>元素 -->
+                <article>
+                    <p>我现在就读于中南财经政法大学，
+                    简称中南大，位于武汉市，
+                    是中华人民共和国教育部直属的一所以经济学、法学、管理学为主干，
+                    兼有哲学、文学、历史学、理学、工学、艺术学等九大学科门类 
+                    的全日制普通高等本科院校，
+                    是国家“211工程”、“985工程优势学科创新平台”项目重点建设高校，
+                    国家“双一流”建设高校。                            
+                    </p>
+                    <p>
+                    学校源于1948年以邓小平为第一书记的中共中央中原局创建、
+                    并由陈毅担任筹委会主任的中原大学。
+                    后来，原隶属于财政部的中南财经大学和
+                    原隶属司法部的中南政法学院合并为中南财经政法大学。
+                    </p>
+                </article>	
+			</div>
+        </div>
+        <!-- end of school-2 -->
+        
+        <!-- 地标介绍部分 表格 -->
+        <div class="school-3">
+            <table>
+                <caption>Campus Landmark</caption>
+                <tbody>
+                    <tr>
+                        <td class="table-1"><img src="./IMG/图书馆.jpg"></td>
+                        <td class="table-1"><img src="./IMG/文波楼.JPG"></td>
+                    </tr>
+                    <tr>
+                        <td class="table-2">图书馆</td>
+                        <td class="table-2">文波楼</td>
+                    </tr>
+                    <tr>
+                        <td class="table-1"><img src="./IMG/九孔桥.png"></td>
+                        <td class="table-1"><img src="./IMG/运动场.png"></td> 
+                    </tr>
+                    <tr>
+                        <td class="table-2">九孔桥</td>
+                        <td class="table-2">北苑运动场</td>  
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end of school-3 -->
+    </div>
+    <!-- end -->
+
+    <!-- 页脚 -->
+    <footer>
+        <ul>
+            <!-- 小导航 可以实现跳转 -->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="town.html">TOWN</a></li>
+            <li><a href="school.html">SCOOHL</a></li>
+            <li><a href="hobby.html">HOBBY</a></li>
+            <li class="right"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      <p>202021130273-NiNi&copy;2022 All Rights Reserved.</p>
+    </footer>
+    <!-- end -->
+</body>
+</html>

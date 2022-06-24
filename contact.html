@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT ME</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- 页眉 -->
+    <header>
+		<div id="head">
+			<!-- 第一个小图标采用绝对定位 -->
+			<img src="./IMG/head-1.png" class="head-1">
+			<img src="./IMG/校徽.png" alt="校徽" class="head-2">
+			<img src="./IMG/head-2.JPG" class="head-3">
+		</div>	
+    </header>
+    <!-- end -->
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><b>HOME</b></a></li>
+            <li><a href="town.html"><b>TOWN</b></a></li>
+            <li><a href="school.html"><b>SCOOHL</b></a></li>
+            <li><a href="hobby.html"><b>HOBBY</b></a></li>
+            <li class="right"><a href="contact.html"><b>CONTACT</b></a></li>
+        </ul>
+	</nav>
+    <!-- end -->
+
+    <!-- CONTACT页：主要采用浮动布局和表单 -->
+    <div class="inner">
+        <!-- inner采用凝胶布局 居中显示 -->
+        <!-- 第一部分 浮动布局 -->
+        <div class="contact-1">
+            <div class="contact-1-1">
+                <p>看完这些介绍有没有对我有一些了解了呢？<br>
+                    没错没错，我就是<br>
+                    <!-- 使用<span>元素 -->
+                    <span>
+                        “活泼乐天派”<br>
+                        “尝新主义者”<br>
+                        “沟通小达人”<br>
+                    </span>
+                    很开心能被你看到！<br>
+                    祝你天天开心哦！
+                </p>
+            </div>
+            <div class="contact-1-2">
+                <!-- 两张图片 浮动布局 -->
+                <img src="./IMG/contact-1.png">
+                <img src="./IMG/contact-2.png">
+            </div>
+        </div>
+        <!-- end of contact-1 -->
+
+        <!-- 增加表单 采用表格布局 -->
+        <div class="contact-2">
+            <h2>· Message ·</h2>
+            <!-- 表单 -->
+            <form method="post">
+                <div class="tablerow">
+                    <p>为我的自我介绍打个分吧！</p>
+                    <!-- 单选按钮 使用<input>和<label>元素 -->
+                    <input type="radio" name="score" value="perfect">
+                    <label for="perfect_score">Perfect!</label><br>
+                    <input type="radio" name="score" value="good">
+                    <label for="good_score">Good</label><br>
+                    <input type="radio" name="score" value="notbad">
+                    <label for="notbad_score">Not Bad</label><br>
+                    <input type="radio" name="score" value="soso">
+                    <label for="soso_score">So-so</label><br>
+                    <input type="radio" name="score" value="bad">
+                    <label for="bad_score">Bad</label><br>
+                </div>
+                <div class="tablerow">
+                    <p>最喜欢哪个页面呢？</p>
+                    <!-- 使用<select>和<option>元素 -->
+                    <select name="page">
+                        <option value="HOME">HOME</option>
+                        <option value="TOWN">TOWN</option>
+                        <option value="SCHOOL">SCHOOL</option>
+                        <option value="HOBBY">HOBBY</option>
+                        <option value="RESUME">RESUME</option>
+                        <option value="CONTACT">CONTACT</option>
+                    </select>
+                </div>
+                <div class="tablerow">
+                    <p>请给我一些建议吧~</p>
+                    <!-- 文本框使用<textarea>元素 -->
+                    <textarea name="comments"></textarea>
+                </div>
+                <div class="tablerow">
+                    <!-- 提交后跳转到原来的页面 -->
+                    <a href="contact.html">
+                        <input type="submit" value="Submit">
+                    </a>
+                </div>
+            </form>
+        </div>
+        <!-- end of contact-2 -->
+    </div>
+    <!-- end -->
+
+    <!-- 页脚 -->
+    <footer>
+        <ul>
+            <!-- 小导航 可以实现跳转 -->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="town.html">TOWN</a></li>
+            <li><a href="school.html">SCOOHL</a></li>
+            <li><a href="hobby.html">HOBBY</a></li>
+            <li class="right"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      <p>202021130273-NiNi&copy;2022 All Rights Reserved.</p>
+    </footer>
+    <!-- end -->
+</body>
+</html>
